@@ -17,6 +17,10 @@ func TestFizzBuzz(t *testing.T) {
 	testcase_4 := Case{name: "FizzBuzz(4)", number: 4, want: "4"}
 	testcase_5 := Case{name: "FizzBuzz(5)", number: 5, want: "Buzz"}
 	testcase_6 := Case{name: "FizzBuzz(6)", number: 6, want: "Fizz"}
+	testcase_7 := Case{name: "FizzBuzz(7)", number: 7, want: "7"}
+	testcase_8 := Case{name: "FizzBuzz(8)", number: 8, want: "8"}
+	testcase_9 := Case{name: "FizzBuzz(9)", number: 9, want: "Fizz"}
+	testcase_10 := Case{name: "FizzBuzz(10)", number: 10, want: "Buzz"}
 	tests := []Case{
 		testcase_1,
 		testcase_2,
@@ -24,6 +28,10 @@ func TestFizzBuzz(t *testing.T) {
 		testcase_4,
 		testcase_5,
 		testcase_6,
+		testcase_7,
+		testcase_8,
+		testcase_9,
+		testcase_10,
 	}
 
 	for _, testcase := range tests {
