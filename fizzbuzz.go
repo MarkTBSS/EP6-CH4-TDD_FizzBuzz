@@ -3,14 +3,26 @@ package main
 import "fmt"
 
 func FizzBuzz(nunber int) string {
-	if nunber%15 == 0 {
+	if isFizzBuzz(nunber) {
 		return "FizzBuzz"
 	}
-	if nunber%5 == 0 {
+	if isBuzz(nunber) {
 		return "Buzz"
 	}
-	if nunber%3 == 0 {
+	if isFizz(nunber) {
 		return "Fizz"
 	}
 	return fmt.Sprintf("%d", nunber)
+}
+
+func isFizz(nunber int) bool {
+	return nunber%3 == 0
+}
+
+func isBuzz(nunber int) bool {
+	return nunber%5 == 0
+}
+
+func isFizzBuzz(nunber int) bool {
+	return nunber%15 == 0
 }
