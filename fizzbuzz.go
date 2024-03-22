@@ -1,14 +1,17 @@
 package main
 
-func FizzBuzz(n int) string {
-	if n == 4 {
+import "fmt"
+
+func FizzBuzz(nunber int) string {
+	/* if nunber == 4 {
 		return "4"
-	}
-	if n == 3 {
+	} */
+	if nunber == 3 {
 		return "Fizz"
 	}
-	if n == 2 {
+	/* if nunber == 2 {
 		return "2"
-	}
-	return "1"
+	} */
+	s := fmt.Sprintf("%d", nunber)
+	return s
 }
