@@ -3,13 +3,13 @@ package main
 import "fmt"
 
 func FizzBuzz(nunber int) string {
-	if nunber == 15 {
+	if nunber%15 == 0 {
 		return "FizzBuzz"
 	}
-	if nunber == 5 || nunber == 10 {
+	if nunber%5 == 0 {
 		return "Buzz"
 	}
-	if nunber == 3 || nunber == 6 || nunber == 9 || nunber == 12 {
+	if nunber%3 == 0 {
 		return "Fizz"
 	}
 	return fmt.Sprintf("%d", nunber)
